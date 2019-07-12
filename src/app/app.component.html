@@ -1,0 +1,25 @@
+<!-- <div class="drop-container" ngFileDrop [options]="options" (uploadOutput)="onUploadOutput($event)" [uploadInput]="uploadInput" [ngClass]="{ 'is-drop-over': dragOver }">
+  <h1>Drag &amp; Drop</h1>
+</div>
+<div>
+  <label class="upload-button">
+    <input type="file" ngFileSelect [options]="options" (uploadOutput)="onUploadOutput($event)" [uploadInput]="uploadInput" multiple>
+    or choose file(s)
+  </label>
+</div>
+<div style="margin-top: 10px;">
+  <button type="button" class="start-upload-btn" (click)="startUpload()">
+    Start Upload
+  </button>
+</div>
+<div class="show-img">
+	<img src="">
+</div> -->
+<!-- ============
+<h3>Angular 7 Image Preview before Upload:</h3>
+<span style="color:red;" *ngIf="message">{{message}}</span>
+<input #file type="file" accept='image/*' (change)="preview(file.files)" />
+<img [src]="imgURL" height="200" *ngIf="imgURL">
+===== -->
+<input type='file' (change)="onSelectFile($event)">
+<img [src]="url" height="200"> <br/>
